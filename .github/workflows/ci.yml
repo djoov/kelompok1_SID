@@ -1,0 +1,46 @@
+name: SDI CI
+
+on:
+  push:
+    paths:
+      - 'project-1/**'
+      - '.github/workflows/ci.yml'
+  pull_request:
+    paths:
+      - 'project-1/**'
+      - '.github/workflows/ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    working-directory: project-1
+
+jobs:
+  verify-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Syntax check
+        run: python -m compileall -q app.py test_app.py package.py
+
+      - name: Unit tests
+        run: python -m unittest -v
+
+      - name: Package candidate
+        run: python package.py
+
+      - name: Store candidate
+        uses: actions/upload-artifact@v4
+        with:
+          name: sdi-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: project-1/dist/*
+          if-no-files-found: error
+          retention-days: 7
