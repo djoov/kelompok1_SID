@@ -1,39 +1,48 @@
-# 🚀 Software Deployment and Implementation
 <div align="center">
 
-### Repository Praktikum & Proyek Akhir Kolaborasi Kelompok
+# 🚀 Software Deployment and Implementation
 
-[![Course](https://img.shields.io/badge/Course-Software%20Deployment%20%26%20Implementation-blue?style=for-the-badge&logo=googledocs&logoColor=white)](#-informasi-akademik)
-[![Program](https://img.shields.io/badge/Program-Teknik%20Informatika%20(S1)-412991?style=for-the-badge&logo=buffer&logoColor=white)](#-informasi-akademik)
-[![Semester](https://img.shields.io/badge/Semester-7-orange?style=for-the-badge)](#-informasi-akademik)
-[![Status](https://img.shields.io/badge/Status-Active%20Academic%20Repo-success?style=for-the-badge&logo=githubactions&logoColor=white)](#-daftar-tugas--progress-tracker)
+### Kelompok 1 · Repository Praktikum, Tugas, dan Proyek Akhir
 
-<p align="center">
-  <b>Repository resmi kelompok untuk dokumentasi tugas perkuliahan, modul praktikum, dan implementasi proyek akhir mata kuliah Software Deployment and Implementation.</b>
-</p>
+*Dari kode yang "jalan di laptop" menuju rilis yang dapat dibuktikan, dipromosikan, dan dipulihkan.*
 
-[📚 Info Kuliah](#-informasi-akademik) •
-[👥 Anggota Tim](#-tim-pengembang) •
-[🎯 Tujuan](#-tujuan--cakupan-repository) •
-[📂 Struktur Direktori](#-struktur-repository) •
-[📊 Progress Tracker](#-daftar-tugas--progress-tracker) •
-[🛠️ Tech Stack](#️-tech-stack--ecosystem) •
-[🌿 Git Workflow](#-standar-dan-alur-kerja-kolaborasi)
+[![SDI CI](https://github.com/djoov/kelompok1_SID/actions/workflows/ci.yml/badge.svg)](https://github.com/djoov/kelompok1_SID/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/CI-GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Dependencies](https://img.shields.io/badge/dependencies-stdlib_only-brightgreen?style=flat-square)
+![Semester](https://img.shields.io/badge/Semester-7-orange?style=flat-square)
+![Progress](https://img.shields.io/badge/progress-3%2F5_milestone-blue?style=flat-square)
 
----
+[Tentang](#-tentang-repository) •
+[Tim](#-tim-pengembang) •
+[Progress](#-progress-tracker) •
+[Prinsip](#-prinsip-deployment-kami) •
+[Sorotan Teknis](#-sorotan-teknis) •
+[Memulai](#-memulai) •
+[Kolaborasi](#-standar-kolaborasi)
 
 </div>
 
-## 📌 Informasi Akademik
+---
+
+## 📌 Tentang Repository
+
+Repository resmi **Kelompok 1** untuk mata kuliah **Software Deployment and Implementation**. Seluruh tugas, praktikum, dan proyek akhir disimpan di sini lengkap dengan kode, pipeline, artifact, dan *evidence* dari setiap percobaan, sehingga setiap klaim dalam laporan dapat ditelusuri dan diuji ulang.
+
+**Sorotan pekerjaan sejauh ini:**
+
+- 🧪 **CI pipeline dengan artifact yang terlacak.** Setiap perubahan pada `project-1/` diuji otomatis, dipaketkan menjadi ZIP + manifest + checksum SHA-256, lalu disimpan sebagai artifact GitHub Actions.
+- 🔵🟢 **Blue-green deployment dengan gate berlapis.** Kandidat bermasalah tetap ditolak walaupun sudah di-*approve*, dan gangguan setelah promosi dipulihkan lewat rollback traffic hingga 0/10 transaksi salah.
+- 🧭 **Keputusan go-live berbasis bukti.** Analisis risiko, syarat minimum, dan kriteria NO-GO dari studi kasus *Monday Morning Go-Live*.
 
 | Komponen | Keterangan |
 | :--- | :--- |
 | **Mata Kuliah** | Software Deployment and Implementation |
-| **Program Studi** | S1 Teknik Informatika (Bachelor of Informatics Engineering) |
+| **Program Studi** | S1 Teknik Informatika |
 | **Semester** | 7 (Tujuh) |
-| **Dosen Pengampu** | *Agus Barlianto* |
-| **Institusi** | *Perbanas Institute* |
-| **Fungsi Repository** | Dokumentasi proses belajar, pengumpulan tugas, dan evaluasi berkala bersama dosen. |
+| **Dosen Pengampu** | Agus Barlianto |
+| **Institusi** | Perbanas Institute |
+| **Kelompok** | Kelompok 1 |
 
 ---
 
@@ -41,142 +50,264 @@
 
 <div align="center">
 
-| Avatar | Nama Lengkap | NIM | Peran Utama | Profil / Kontak |
+| | Nama | NIM | Peran | GitHub |
 | :---: | :--- | :---: | :--- | :---: |
-| <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Jouvi" width="55" style="border-radius:50%"/> | **Nur Akhmad Van Jouvi** | `2314000024` | Team Member / DevOps & Implementation | [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=flat-square&logo=github)](https://github.com/) |
-| <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Adelia" width="55" style="border-radius:50%"/> | **Adelia Rahma Zalianty** | `2314000029` | Team Member / System & Documentation | [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=flat-square&logo=github)](https://github.com/) |
+| <img src="https://github.com/djoov.png?size=120" width="56" alt="djoov"/> | **Nur Akhmad Van Jouvi** | `2314000024` | Koordinator · DevOps & Implementation | [@djoov](https://github.com/djoov) |
+| <img src="https://github.com/JudikaM.png?size=120" width="56" alt="JudikaM"/> | **Judika Marpaung** | `2314000021` | Verification & Risk Analysis | [@JudikaM](https://github.com/JudikaM) |
+| <img src="https://github.com/Adeliarzz.png?size=120" width="56" alt="Adeliarzz"/> | **Adelia Rahma Zalianty** | `2314000029` | System & Documentation | [@Adeliarzz](https://github.com/Adeliarzz) |
 
 </div>
 
 ---
 
-## 🎯 Tujuan & Cakupan Repository
+## 📊 Progress Tracker
 
-Repository ini didedikasikan untuk memenuhi standar perkuliahan dan kolaborasi berbasis industri, yang mencakup:
+| No | Milestone | Fokus Materi | Output | Status | Lokasi |
+| :---: | :--- | :--- | :--- | :---: | :--- |
+| 01 | **Task 01: Go-Live Readiness** | Deployment vs implementation, risiko go-live | Exit ticket individu + studi kasus kelompok *Monday Morning Go-Live* | ✅ Selesai | [`assignment/task-01`](./assignment/task-01) |
+| 02 | **Praktikum CI Pipeline** | Continuous Integration & packaging artifact | Workflow GitHub Actions: syntax check → unit test → package → upload artifact | ✅ Selesai | [`project-1`](./project-1) · [`ci.yml`](./.github/workflows/ci.yml) |
+| 03 | **Task 02: Blue-Green & Rollback** | Environment, release, dan recovery | Lab blue-green + laporan praktikum lengkap dengan evidence | ✅ Selesai | [`assignment/task-02`](./assignment/task-02) |
+| 04 | **Task 03** | Menunggu materi pertemuan berikutnya | — | 📝 Direncanakan | [`assignment/task-03`](./assignment/task-03) |
+| 05 | **Final Project** | End-to-end system deployment & monitoring | — | 📝 Direncanakan | [`final-project`](./final-project) |
 
-* **Penyimpanan Source Code Terpusat**: Seluruh tugas mandiri maupun kelompok tersusun modular dan terdokumentasi rapi.
-* **Implementasi CI/CD & Deployment Modern**: Menerapkan konsep otomatisasi build, containerization, dan deployment ke server/cloud environment.
-* **Dokumentasi Teknis yang Komprehensif**: Menyediakan catatan arsitektur, konfigurasi server, serta panduan pengujian di setiap modul.
-* **Kolaborasi Standar Industri**: Menerapkan *Git Flow*, *Pull Request Review*, dan *Conventional Commits* antar anggota tim.
-* **Final Project Showcase**: Wadah utama implementasi sistem terintegrasi yang siap dipresentasikan dan diuji oleh dosen pengampu.
+> Keterangan status: `📝 Direncanakan` · `🚧 Dalam Pengerjaan` · `🔍 Siap Direview` · `✅ Selesai`
+
+---
+
+## 🧠 Prinsip Deployment Kami
+
+Lima pelajaran yang kami buktikan sendiri lewat praktikum:
+
+| # | Prinsip | Bukti di repository ini |
+| :---: | :--- | :--- |
+| 1 | **Build sekali, promosikan artifact yang sama.** | Checksum green sebelum dan sesudah promosi identik (`dfd15c9e…75f54`); yang berubah hanya konfigurasi. |
+| 2 | **HTTP 200 bukan bukti layanan benar.** | Saat gangguan pasca-promosi, `/health` tetap 200, tetapi 3 dari 10 transaksi menghasilkan biaya salah. |
+| 3 | **Approval manusia tidak bisa mengalahkan gate otomatis.** | `switch green --approve` tetap ditolak ketika gate bisnis green gagal. |
+| 4 | **Rollback traffic bukan rollback data.** | Migration yang menghapus kolom akan memutus jalur kembali ke blue; solusinya pola *expand–contract*. |
+| 5 | **Go-live adalah keputusan berbasis bukti.** | Kriteria NO-GO pada studi kasus: lebih baik menunda daripada merilis sistem yang belum siap. |
+
+---
+
+## 🔬 Sorotan Teknis
+
+### 1. Praktikum CI Pipeline: [`project-1/`](./project-1)
+
+Aplikasi kecil yang menjadi "kontrak" untuk praktikum-praktikum berikutnya: fungsi `biaya(amount)` menghitung biaya **1% dari nominal (dibulatkan ke bawah), maksimal Rp5.000**, dan menolak input yang bukan bilangan bulat nonnegatif.
+
+| Skenario | Input | Hasil yang diharapkan |
+| :--- | :--- | :--- |
+| Normal | `biaya(100000)` | `1000` |
+| Batas maksimum | `biaya(1000000)` | `5000` |
+| Nol | `biaya(0)` | `0` |
+| Tidak valid | `-1`, `"100000"`, `True` | `ValueError` |
+
+**Alur pipeline** ([`.github/workflows/ci.yml`](./.github/workflows/ci.yml)):
+
+```mermaid
+flowchart LR
+    T["push / pull request<br/>(project-1/** atau ci.yml)<br/>atau manual dispatch"] --> S["Checkout<br/>+ Python 3.12"]
+    S --> C["Syntax check<br/>compileall"]
+    C --> U["Unit test<br/>4 skenario"]
+    U --> P["Package<br/>ZIP + manifest + SHA-256"]
+    P --> A[("Artifact GitHub Actions<br/>retensi 7 hari")]
+```
+
+Keputusan desain pipeline:
+
+- **Path filter.** Workflow hanya berjalan bila `project-1/**` atau file workflow berubah, sehingga perubahan dokumentasi tidak memicu build.
+- **Least privilege.** Token workflow hanya memiliki izin `contents: read`.
+- **Artifact terlacak.** Nama artifact memuat commit SHA, run ID, dan run attempt (`sdi-<sha>-<run_id>-<attempt>`). Isi paket: `app.py`, `VERSION`, dan `manifest.json` (versi, commit, build run).
+- **Gagal secara eksplisit.** `if-no-files-found: error` memastikan pipeline merah bila paket tidak terbentuk.
+- **Integritas dapat diverifikasi.** [`verify.py`](./project-1/verify.py) mencocokkan setiap ZIP dengan file `.sha256` dan mencetak `MATCH` atau `MISMATCH`.
+
+### 2. Task 02: Blue-Green Deployment & Rollback: [`assignment/task-02/`](./assignment/task-02)
+
+Simulasi rilis menggunakan dua slot logis di belakang satu router, dibangun hanya dengan Python standard library ([`lab.py`](./assignment/task-02/SDI_Starter_Blue_Green/lab.py)).
+
+```mermaid
+flowchart TB
+    U(["Pengguna"]) --> R["Router public :8100<br/>route.json menentukan slot aktif"]
+    R -->|"active = blue"| B["🔵 Blue :8101<br/>v1.0.0 · production"]
+    R -.->|"setelah switch"| G["🟢 Green :8102<br/>v1.1.0 · staging → production"]
+    S[("Artifact storage<br/>sdi-1.0.0.zip · sdi-1.1.0.zip<br/>+ file .sha256")] -->|"verifikasi checksum,<br/>tanpa build ulang"| B
+    S -->|"verifikasi checksum,<br/>tanpa build ulang"| G
+```
+
+**Lapisan pengaman sebelum traffic berpindah:**
+
+```mermaid
+flowchart LR
+    K["switch green"] --> A{"Approval manusia<br/>--approve"}
+    A -->|"tidak ada"| X1["❌ Ditolak<br/>Human approval missing"]
+    A -->|"ada"| G{"Gate bisnis<br/>4 smoke test"}
+    G -->|"FAIL"| X2["❌ Ditolak<br/>traffic tetap di blue"]
+    G -->|"PASS"| SW["Route → green"]
+    SW --> V{"Validasi public<br/>pasca-switch"}
+    V -->|"PASS"| OK["✅ Green melayani pengguna"]
+    V -->|"FAIL"| RB["↩️ Investigasi &<br/>rollback ke blue"]
+```
+
+Sebelum itu, saat server dijalankan, loader sudah memverifikasi SHA-256 setiap ZIP dan hash source `app.py` terhadap manifest. Paket yang berubah tidak akan pernah dimuat.
+
+<details>
+<summary><b>Referensi perintah <code>lab.py</code></b></summary>
+
+| Perintah | Fungsi |
+| :--- | :--- |
+| `python lab.py prepare` | Membuat atau memverifikasi artifact `sdi-1.0.0` dan `sdi-1.1.0` beserta `.sha256` |
+| `python lab.py run` | Menjalankan blue (`:8101`), green (`:8102`), dan router public (`:8100`) |
+| `python lab.py check --target <blue\|green\|public>` | Gate bisnis 4 kasus (`0`, `100000`, `1000000`, `-1`), hasil `GATE: PASS/FAIL` |
+| `python lab.py health --target <slot>` | Status `/health`: versi, SHA-256 artifact, environment, revisi konfigurasi |
+| `python lab.py measure --target <slot>` | 10 request sintetis; menghitung persentase biaya yang salah, bukan sekadar status HTTP |
+| `python lab.py switch <blue\|green> --approve` | Memindahkan traffic setelah approval dan gate PASS, lalu memvalidasi public |
+| `python lab.py fault <on\|off>` | Menyimulasikan gangguan konfigurasi pada green (artifact tidak berubah) |
+
+</details>
+
+**Ringkasan evidence** (detail lengkap dan screenshot ada di [laporan praktikum](./assignment/task-02/Laporan_Praktikum_Blue_Green_Kelompok1.docx)):
+
+| Tahap | Route public | Versi | Health | Gate bisnis | Salah/10 | Keputusan |
+| :--- | :---: | :---: | :---: | :--- | :---: | :--- |
+| Baseline | blue | 1.0.0 | 200 | public PASS · green PASS | 0/10 | Lanjut validasi kandidat |
+| Kandidat bermasalah | blue | 1.0.0 | 200 | green FAIL (`100000 → 5000`) | 0/10 | Switch ditolak walaupun `--approve` |
+| Promosi kandidat sehat | green | 1.1.0 | 200 | green PASS · public PASS | 0/10 | Dipromosikan |
+| Gangguan pasca-promosi | green | 1.1.0 | 200 | public FAIL | **3/10** | Hentikan perluasan, pulihkan |
+| Recovery | blue | 1.0.0 | 200 | public PASS | 0/10 | Pertahankan blue, perbaiki green |
+
+**Identitas artifact:**
+
+| Titik pengamatan | Versi | Environment | Revisi config | SHA-256 |
+| :--- | :---: | :---: | :---: | :--- |
+| Green sebelum promosi | 1.1.0 | staging | 1 | `dfd15c9e…75f54` |
+| Green sesudah promosi | 1.1.0 | production | 4 | `dfd15c9e…75f54` (identik) |
+| Blue (pembanding) | 1.0.0 | production | 1 → 2 | `b2bdf533…89035` |
+
+> [!NOTE]
+> **Kendala nyata:** `lab.py prepare` gagal di Python 3.14 karena zlib-ng menghasilkan byte ZIP yang berbeda dari artifact bawaan, walaupun isi filenya sama. Kelompok memverifikasi checksum dan isi artifact bawaan lalu memakainya tanpa perubahan. Ini contoh langsung mengapa artifact harus dibangun sekali dan dipromosikan apa adanya, bukan dibangun ulang di setiap environment.
+
+### 3. Task 01: Studi Kasus *Monday Morning Go-Live*: [`assignment/task-01/`](./assignment/task-01)
+
+Analisis kesiapan go-live sistem untuk ±5.000 pengguna ([`study_case_group.md`](./assignment/task-01/study_case_group.md)), dilengkapi exit ticket individu anggota.
+
+| Pertanyaan | Jawaban inti kelompok |
+| :--- | :--- |
+| **Tiga risiko terbesar** | Server belum pernah diuji beban, migrasi data berisiko hilang/tidak sesuai, admin hanya mendapat training 2 jam |
+| **Syarat minimum go-live** | Server stabil dan teruji, data migrasi tervalidasi, fitur utama lolos testing, admin terlatih, backup, rollback plan, monitoring |
+| **Bukti sebelum peluncuran** | Hasil testing, validasi migrasi, hasil uji server, bukti training, backup, dokumen rollback |
+| **Kapan NO-GO** | Server belum stabil, data migrasi belum tervalidasi, fitur utama masih error, atau backup dan rollback plan belum ada |
 
 ---
 
 ## 📂 Struktur Repository
 
-```bash
-software-deployment-and-implementation/
-│
-├── 📁 assignment/                 # Kumpulan tugas & praktikum mingguan
-│   ├── 📁 task-01/                # Modul 1: [Topik Praktikum 1]
-│   ├── 📁 task-02/                # Modul 2: [Topik Praktikum 2]
-│   └── 📁 task-03/                # Modul 3: [Topik Praktikum 3]
-│
-├── 📁 final-project/              # Kode sumber & konfigurasi Proyek Akhir
-│   ├── 📁 src/                    # Source code aplikasi utama
-│   ├── 📁 deployment/             # Skrip deploy (Docker, CI/CD, Nginx config)
-│   └── 📄 README.md               # Dokumentasi teknis khusus Final Project
-│
-├── 📁 documentation/              # Laporan, diagram arsitektur, & materi presentasi
-│   ├── 📁 architecture/           # Diagram alur sistem & infrastruktur
-│   └── 📁 reports/                # Laporan praktikum & dokumentasi teknis
-│
-└── 📄 README.md                   # Dokumentasi utama repository
+```text
+kelompok1_SID/
+├── .github/
+│   └── workflows/
+│       └── ci.yml                         # Pipeline CI GitHub Actions untuk project-1
+├── assignment/
+│   ├── task-01/                           # Studi kasus go-live + exit ticket individu (<NIM>_<Nama>.pdf)
+│   ├── task-02/
+│   │   ├── Laporan_Praktikum_Blue_Green_Kelompok1.docx
+│   │   └── SDI_Starter_Blue_Green/
+│   │       ├── lab.py                     # Router + slot blue/green + gate + rollback
+│   │       └── artifacts/                 # sdi-1.0.0.zip, sdi-1.1.0.zip, dan file .sha256
+│   └── task-03/                           # Disiapkan untuk tugas berikutnya
+├── project-1/                             # Praktikum CI
+│   ├── app.py                             # Fungsi biaya(amount)
+│   ├── test_app.py                        # Unit test (unittest)
+│   ├── package.py                         # Membuat ZIP + manifest + SHA-256 di dist/
+│   ├── verify.py                          # Verifikasi checksum paket
+│   └── VERSION                            # Versi rilis (1.0.0)
+├── documentation/                         # Disiapkan untuk laporan & diagram arsitektur
+├── final-project/                         # Disiapkan untuk proyek akhir
+└── README.md
 ```
 
 ---
 
-## 📊 Daftar Tugas & Progress Tracker
+## 🚀 Memulai
 
-Tabel pelacak status pengerjaan untuk mempermudah monitoring dan evaluasi oleh dosen pengampu:
+**Prasyarat:** Git dan Python 3.10+ (CI memakai 3.12). Semua kode hanya memakai *standard library*, sehingga tidak perlu `pip install`, Docker, maupun koneksi internet.
 
-| No | Modul / Tugas | Deskripsi Singkat | Status | Direktori / Tautan | Evaluasi & Feedback |
-| :---: | :--- | :--- | :---: | :---: | :---: |
-| 01 | **Task 01** | Setup Environment & Basic Deployment Configuration | `📝 Direncanakan` | [`assignment/task-01`](./assignment/task-01) | - |
-| 02 | **Task 02** | Containerization with Docker & Multi-stage Builds | `📝 Direncanakan` | [`assignment/task-02`](./assignment/task-02) | - |
-| 03 | **Task 03** | CI/CD Pipeline Automation & Testing Integration | `📝 Direncanakan` | [`assignment/task-03`](./assignment/task-03) | - |
-| 04 | **Final Project** | End-to-End System Deployment & Monitoring | `🚀 In Progress` | [`final-project`](./final-project) | - |
+> [!TIP]
+> Di Windows, gunakan `py -3` jika perintah `python` tidak tersedia; di macOS/Linux gunakan `python3`.
 
-> *Keterangan Status: `📝 Direncanakan` \| `🚧 Dalam Pengerjaan` \| `🔍 Siap Direview` \| `✅ Selesai`*
+```bash
+git clone https://github.com/djoov/kelompok1_SID.git
+cd kelompok1_SID
+```
+
+**Menjalankan pipeline CI secara lokal**
+
+```bash
+cd project-1
+python -m compileall -q app.py test_app.py package.py   # syntax check
+python -m unittest -v                                    # 4 skenario uji
+python package.py                                        # dist/sdi-1.0.0-local-local.zip + .sha256
+cd dist && python ../verify.py                           # hasil: MATCH
+```
+
+**Menjalankan lab blue-green** (butuh dua terminal di folder `assignment/task-02/SDI_Starter_Blue_Green`)
+
+```bash
+# Terminal A — jalankan server dan biarkan terbuka (berhenti: Ctrl+C)
+python lab.py run
+
+# Terminal B — validasi, lalu promosikan kandidat
+python lab.py check --target public
+python lab.py health --target green
+python lab.py switch green --approve
+python lab.py measure --target public
+```
+
+Endpoint kesehatan tersedia di `http://127.0.0.1:8100/health`. Artifact bawaan sudah tersedia di repository, jadi `prepare` tidak wajib dijalankan.
 
 ---
 
-## 🛠️ Tech Stack & Ecosystem
+## 🛠️ Tech Stack
 
-Teknologi, tools, dan platform yang digunakan dalam mata kuliah ini:
+| Kategori | Digunakan saat ini | Rencana (final project) |
+| :--- | :--- | :--- |
+| **Bahasa & runtime** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) `unittest` · `zipfile` · `hashlib` · `http.server` | — |
+| **Version control & CI/CD** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) | — |
+| **Integritas rilis** | Checksum SHA-256, manifest artifact | — |
+| **Container & orkestrasi** | — | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white) |
+| **Web server & OS** | — | ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white) ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white) |
 
-| Kategori | Teknologi & Tools |
+---
+
+## 🌿 Standar Kolaborasi
+
+**Konvensi branch**
+
+| Pola | Kegunaan | Contoh |
+| :--- | :--- | :--- |
+| `main` | Branch stabil yang ditinjau dosen | — |
+| `feat/<topik>` | Tugas, modul, atau fitur baru | `feat/task-03-monitoring` |
+| `fix/<topik>` | Perbaikan bug atau konfigurasi | `fix/ci-artifact-path` |
+| `docs/<topik>` | Laporan, dokumentasi, README | `docs/laporan-task-03` |
+
+**Format commit** ([Conventional Commits](https://www.conventionalcommits.org/)): `<type>: <deskripsi singkat>`
+
+| Type | Kapan dipakai |
 | :--- | :--- |
-| **Version Control & CI/CD** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) |
-| **Container & Virtualization** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white) |
-| **Web Server & Reverse Proxy**| ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white) |
-| **Operating System & Cloud**   | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white) |
-| **Documentation & Formats**   | ![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white) ![YAML](https://img.shields.io/badge/YAML-CB171E?style=flat-square&logo=yaml&logoColor=white) |
+| `feat` | Menambah tugas, fitur, atau konfigurasi deployment |
+| `fix` | Memperbaiki bug atau kesalahan konfigurasi |
+| `docs` | Memperbarui dokumentasi, laporan, atau README |
+| `refactor` | Merapikan kode/skrip tanpa mengubah perilaku |
+| `chore` | Penyesuaian tooling, dependency, atau `.gitignore` |
 
----
+**Definition of Done untuk setiap tugas**
 
-## 🌿 Standar dan Alur Kerja Kolaborasi
-
-Untuk menjaga kualitas kode, konsistensi riwayat komit, dan kemudahan kolaborasi, tim menerapkan standar berikut:
-
-### 1. Konvensi Penamaan Branch
-* `main` : Branch produksi/stabil utama yang siap ditinjau dosen pengampu.
-* `feat/<nama-fitur>` : Pengerjaan modul atau penambahan fitur baru (contoh: `feat/task-01-docker`).
-* `fix/<nama-bug>` : Perbaikan konfigurasi, script, atau bug.
-* `docs/<topik>` : Penambahan dokumentasi, laporan, atau revisi README.
-
-### 2. Standar Pesan Commit (Conventional Commits)
-Format penulisan commit: `<type>: <deskripsi singkat>`
-* `feat:` Menambahkan fitur baru, modul tugas, atau konfigurasi deployment.
-* `fix:` Memperbaiki bug atau kesalahan konfigurasi.
-* `docs:` Memperbarui dokumentasi, laporan, atau panduan setup.
-* `refactor:` Mengubah struktur kode/skrip tanpa mengubah fungsionalitas.
-* `chore:` Penyesuaian tooling, dependencies, atau file `.gitignore`.
-
-### 3. Diagram Alur Kolaborasi
-```mermaid
-gitGraph
-    commit id: "Initial Commit"
-    branch feat/task-01
-    checkout feat/task-01
-    commit id: "feat: setup task-01 config"
-    commit id: "docs: add task-01 report"
-    checkout main
-    merge feat/task-01 id: "PR #1 Merged"
-    branch feat/final-project
-    checkout feat/final-project
-    commit id: "feat: setup dockerfile & compose"
-    checkout main
-    merge feat/final-project id: "PR #2 Merged"
-```
-
----
-
-## 🚀 Panduan Memulai (Getting Started)
-
-### 1. Melakukan Clone Repository
-```bash
-git clone https://github.com/[username]/[repo-name].git
-cd software-deployment-and-implementation
-```
-
-### 2. Membuat Branch Pengerjaan Baru
-```bash
-git checkout -b feat/nama-tugas-atau-fitur
-```
-
-### 3. Menyimpan & Mengirim Perubahan
-```bash
-git add .
-git commit -m "feat: menambahkan konfigurasi deployment modul X"
-git push origin feat/nama-tugas-atau-fitur
-```
-*Buka **Pull Request (PR)** di GitHub menuju branch `main` untuk direview bersama rekan tim sebelum di-merge.*
+- [ ] File tugas berada di `assignment/task-XX/` (laporan individu: `<NIM>_<Nama>.pdf`)
+- [ ] Evidence tersedia: log, screenshot, atau checksum yang mendukung setiap klaim
+- [ ] CI hijau untuk setiap perubahan kode
+- [ ] Progress tracker di README diperbarui
+- [ ] Commit mengikuti format di atas dan sudah di-*pull* sebelum *push*
 
 ---
 
 <div align="center">
-  <sub>Software Deployment and Implementation • S1 Teknik Informatika • Semester 7</sub><br>
-  <sub>Dikembangkan dan dikelola dengan penuh dedikasi oleh Tim Mahasiswa.</sub>
+  <sub><b>Kelompok 1</b> · Software Deployment and Implementation · S1 Teknik Informatika · Perbanas Institute · 2026</sub>
 </div>
-
