@@ -1,6 +1,6 @@
 # Evidence: Praktikum Blue-Green Deployment & Rollback
 
-Screenshot terminal dari percobaan Kelompok 1 (Windows 11, Python 3.14, perintah `py -3`). Terminal A menjalankan server; Terminal B menjalankan perintah kontrol dan validasi secara berurutan pada sesi server yang sama. Gambar yang sama juga dilampirkan pada [laporan praktikum](../Laporan_Praktikum_Blue_Green_Kelompok1.docx).
+Screenshot terminal dari percobaan Kelompok 1 (Windows 11, Python 3.14, perintah `py -3`). Terminal A menjalankan server; Terminal B menjalankan perintah kontrol dan validasi secara berurutan pada sesi server yang sama. Gambar yang sama juga dilampirkan pada [laporan praktikum](../Laporan_Praktikum_Blue_Green_Kelompok1.pdf).
 
 | No | Langkah | Yang dibuktikan | Screenshot |
 | :---: | :--- | :--- | :--- |

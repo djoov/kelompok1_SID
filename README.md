@@ -164,7 +164,7 @@ Sebelum itu, saat server dijalankan, loader sudah memverifikasi SHA-256 setiap Z
 
 </details>
 
-**Ringkasan evidence** (screenshot terminal tiap langkah ada di [`evidence/`](./assignment/task-02/evidence); analisis lengkap ada di [laporan praktikum](./assignment/task-02/Laporan_Praktikum_Blue_Green_Kelompok1.docx)):
+**Ringkasan evidence** (screenshot terminal tiap langkah ada di [`evidence/`](./assignment/task-02/evidence); analisis lengkap ada di [laporan praktikum](./assignment/task-02/Laporan_Praktikum_Blue_Green_Kelompok1.pdf)):
 
 | Tahap | Route public | Versi | Health | Gate bisnis | Salah/10 | Keputusan |
 | :--- | :---: | :---: | :---: | :--- | :---: | :--- |
@@ -208,7 +208,7 @@ kelompok1_SID/
 ├── assignment/
 │   ├── task-01/                           # Studi kasus go-live + exit ticket individu (<NIM>_<Nama>.pdf)
 │   ├── task-02/
-│   │   ├── Laporan_Praktikum_Blue_Green_Kelompok1.docx
+│   │   ├── Laporan_Praktikum_Blue_Green_Kelompok1.pdf
 │   │   ├── evidence/                      # Screenshot terminal langkah 0–6
 │   │   └── SDI_Starter_Blue_Green/
 │   │       ├── lab.py                     # Router + slot blue/green + gate + rollback
