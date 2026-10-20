@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Hasil build dan state runtime lokal
+dist/
+runtime/
+
+# File sementara Microsoft Office (muncul saat dokumen sedang dibuka)
+~$*
+
+# File sistem operasi
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Rahasia dan konfigurasi lokal
+.env
+*.env
+!example.env

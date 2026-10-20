@@ -1,0 +1,12 @@
+# Normalisasi akhir baris untuk file teks
+* text=auto
+
+# Checksum harus berformat LF agar `sha256sum -c` berjalan di semua OS
+*.sha256 text eol=lf
+
+# File biner: jangan diubah oleh Git
+*.zip  binary
+*.pdf  binary
+*.docx binary
+*.png  binary
+*.jpg  binary
