@@ -164,7 +164,7 @@ Sebelum itu, saat server dijalankan, loader sudah memverifikasi SHA-256 setiap Z
 
 </details>
 
-**Ringkasan evidence** (detail lengkap dan screenshot ada di [laporan praktikum](./assignment/task-02/Laporan_Praktikum_Blue_Green_Kelompok1.docx)):
+**Ringkasan evidence** (screenshot terminal tiap langkah ada di [`evidence/`](./assignment/task-02/evidence); analisis lengkap ada di [laporan praktikum](./assignment/task-02/Laporan_Praktikum_Blue_Green_Kelompok1.docx)):
 
 | Tahap | Route public | Versi | Health | Gate bisnis | Salah/10 | Keputusan |
 | :--- | :---: | :---: | :---: | :--- | :---: | :--- |
@@ -209,6 +209,7 @@ kelompok1_SID/
 │   ├── task-01/                           # Studi kasus go-live + exit ticket individu (<NIM>_<Nama>.pdf)
 │   ├── task-02/
 │   │   ├── Laporan_Praktikum_Blue_Green_Kelompok1.docx
+│   │   ├── evidence/                      # Screenshot terminal langkah 0–6
 │   │   └── SDI_Starter_Blue_Green/
 │   │       ├── lab.py                     # Router + slot blue/green + gate + rollback
 │   │       └── artifacts/                 # sdi-1.0.0.zip, sdi-1.1.0.zip, dan file .sha256
@@ -221,6 +222,8 @@ kelompok1_SID/
 │   └── VERSION                            # Versi rilis (1.0.0)
 ├── documentation/                         # Disiapkan untuk laporan & diagram arsitektur
 ├── final-project/                         # Disiapkan untuk proyek akhir
+├── .gitattributes                         # Aturan akhir baris & file biner
+├── .gitignore                             # File yang tidak boleh ikut ter-commit
 └── README.md
 ```
 
