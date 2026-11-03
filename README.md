@@ -31,9 +31,9 @@ Repository resmi **Kelompok 1** untuk mata kuliah **Software Deployment and Impl
 
 **Sorotan pekerjaan sejauh ini:**
 
-- 🧪 **CI pipeline dengan artifact yang terlacak.** Setiap perubahan pada `project-1/` diuji otomatis, dipaketkan menjadi ZIP + manifest + checksum SHA-256, lalu disimpan sebagai artifact GitHub Actions.
-- 🔵🟢 **Blue-green deployment dengan gate berlapis.** Kandidat bermasalah tetap ditolak walaupun sudah di-*approve*, dan gangguan setelah promosi dipulihkan lewat rollback traffic hingga 0/10 transaksi salah.
-- 🧭 **Keputusan go-live berbasis bukti.** Analisis risiko, syarat minimum, dan kriteria NO-GO dari studi kasus *Monday Morning Go-Live*.
+- 🧪 **CI pipeline dengan artifact yang terlacak atau pengelolaan artifact.** Setiap perubahan pada `project-1/` akan menjalani pengujian otomatis, Selanjutnya, hasilnya dikemas dalam bentuk ZIP yang dilengkapi manifest dan checksum SHA-256, kemudian disimpan sebagai artifact di GitHub Actions.
+- 🔵🟢 **Blue-green deployment dengan gate berlapis.**  Kandidat deployment yang mengalami masalah akan tetap ditolak meskipun telah mendapatkan *approval*. Apabila terjadi gangguan setelah proses promosi, pemulihan dilakukan dengan mengembalikan traffic melalui rollback hingga seluruh transaksi kembali berjalan dengan benar (0/10 transaksi salah).
+- 🧭 **Keputusan go-live berbasis bukti.** Meliputi pembahasan risiko, persyaratan minimum sebelum peluncuran, serta penentuan kriteria NO-GO berdasarkan studi kasus *Monday Morning Go-Live*.
 
 | Komponen | Keterangan |
 | :--- | :--- |
