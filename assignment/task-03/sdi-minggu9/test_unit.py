@@ -42,6 +42,12 @@ class TestBiaya(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     biaya(value)
 
+    def test_large_amount(self):
+        self.assertEqual(biaya(1_000_000), 5_000)
+
+    def test_two_below_threshold(self):
+        self.assertEqual(biaya(49_998), 0)
+
 
 if __name__ == "__main__":
     unittest.main()

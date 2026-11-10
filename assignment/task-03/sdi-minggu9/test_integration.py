@@ -10,7 +10,10 @@ class TestCLI(unittest.TestCase):
     def run_cli(self, value):
         return subprocess.run(
             [sys.executable, str(ROOT / "app.py"), value],
-            capture_output=True, text=True, timeout=10, cwd=ROOT,
+            capture_output=True,
+            text=True,
+            timeout=10,
+            cwd=ROOT,
         )
 
     def test_cli_at_threshold(self):
@@ -37,6 +40,12 @@ class TestCLI(unittest.TestCase):
         self.assertEqual(result.returncode, 2)
         self.assertEqual(result.stdout, "")
         self.assertTrue(result.stderr.strip())
+
+    def test_cli_below_threshold(self):
+        result = self.run_cli("49999")
+        self.assertEqual(result.returncode, 0)
+        self.assertEqual(result.stdout.strip(), "0")
+        self.assertEqual(result.stderr, "")
 
 
 if __name__ == "__main__":
