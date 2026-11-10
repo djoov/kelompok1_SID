@@ -39,5 +39,10 @@ class TestBiaya(unittest.TestCase):
 
     def test_just_below_cap(self):
         self.assertEqual(biaya(499_999), 4_999)
+
+    def test_large_amount(self):
+        self.assertEqual(biaya(1_000_000), 5_000)
+
+
 if __name__ == "__main__":
     unittest.main()
